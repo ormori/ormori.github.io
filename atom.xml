@@ -4,9 +4,9 @@
   <subtitle>丰富多彩的世界源自三原色的无限组合</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://ormori.com/"/>
   <updated>2016-02-17T07:10:19.081Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://ormori.com/</id>
   
   <author>
     <name>Ormori</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>序</title>
-    <link href="http://yoursite.com/2016/02/17/my-new-post/"/>
-    <id>http://yoursite.com/2016/02/17/my-new-post/</id>
+    <link href="http://ormori.com/2016/02/17/my-new-post/"/>
+    <id>http://ormori.com/2016/02/17/my-new-post/</id>
     <published>2016-02-17T07:00:25.000Z</published>
     <updated>2016-02-17T07:10:19.081Z</updated>
     
@@ -46,8 +46,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2016/02/17/hello-world/"/>
-    <id>http://yoursite.com/2016/02/17/hello-world/</id>
+    <link href="http://ormori.com/2016/02/17/hello-world/"/>
+    <id>http://ormori.com/2016/02/17/hello-world/</id>
     <published>2016-02-17T05:52:43.990Z</published>
     <updated>2016-02-17T05:52:43.990Z</updated>
     
