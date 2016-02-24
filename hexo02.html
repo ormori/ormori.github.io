@@ -59,18 +59,16 @@
 
 
 
-<meta name="description" content="前言有写作习惯的朋友大都知道WordPress，当然最早都是用新浪博客、QQ空间之类，如今还有各种微博、微信；之前我都是用WordPress，WordPress很强大，强大到现在让我失去了写作的乐趣，更多的是去折腾：频繁地更换主题、插件，甚至某些好的收费主题让你愿意花钱去购买，少则几十，多则几百，而最终用腻了又会再花钱去买其他的主题，最后网站内容没什么更新，钱和时间倒是花了不少。后来也看到用gho">
+<meta name="description" content="上篇已经记录了如何安装HEXO，HEXO默认主题也不错，但是不太美观，而且默认是没有评论系统的，那么本篇就开始记录如何安装主题、插件、评论及搜索系统。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo建站日志NO.1：安装及配置">
-<meta property="og:url" content="http://ormori.com/hexo01.html">
+<meta property="og:title" content="Hexo建站日志NO.2：主题、插件、评论、搜索">
+<meta property="og:url" content="http://ormori.com/hexo02.html">
 <meta property="og:site_name" content="Ormori 森原摄">
-<meta property="og:description" content="前言有写作习惯的朋友大都知道WordPress，当然最早都是用新浪博客、QQ空间之类，如今还有各种微博、微信；之前我都是用WordPress，WordPress很强大，强大到现在让我失去了写作的乐趣，更多的是去折腾：频繁地更换主题、插件，甚至某些好的收费主题让你愿意花钱去购买，少则几十，多则几百，而最终用腻了又会再花钱去买其他的主题，最后网站内容没什么更新，钱和时间倒是花了不少。后来也看到用gho">
-<meta property="og:image" content="http://ormori.com/uploads/hexo01.png">
-<meta property="og:image" content="http://ormori.com/uploads/hexo02.jpg">
-<meta property="og:updated_time" content="2016-02-24T03:49:57.883Z">
+<meta property="og:description" content="上篇已经记录了如何安装HEXO，HEXO默认主题也不错，但是不太美观，而且默认是没有评论系统的，那么本篇就开始记录如何安装主题、插件、评论及搜索系统。">
+<meta property="og:updated_time" content="2016-02-24T04:28:05.254Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo建站日志NO.1：安装及配置">
-<meta name="twitter:description" content="前言有写作习惯的朋友大都知道WordPress，当然最早都是用新浪博客、QQ空间之类，如今还有各种微博、微信；之前我都是用WordPress，WordPress很强大，强大到现在让我失去了写作的乐趣，更多的是去折腾：频繁地更换主题、插件，甚至某些好的收费主题让你愿意花钱去购买，少则几十，多则几百，而最终用腻了又会再花钱去买其他的主题，最后网站内容没什么更新，钱和时间倒是花了不少。后来也看到用gho">
+<meta name="twitter:title" content="Hexo建站日志NO.2：主题、插件、评论、搜索">
+<meta name="twitter:description" content="上篇已经记录了如何安装HEXO，HEXO默认主题也不错，但是不太美观，而且默认是没有评论系统的，那么本篇就开始记录如何安装主题、插件、评论及搜索系统。">
 
 
 
@@ -88,7 +86,7 @@
   };
 </script>
 
-  <title> Hexo建站日志NO.1：安装及配置 | Ormori 森原摄 </title>
+  <title> Hexo建站日志NO.2：主题、插件、评论、搜索 | Ormori 森原摄 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -255,7 +253,7 @@
             
             
               
-                Hexo建站日志NO.1：安装及配置
+                Hexo建站日志NO.2：主题、插件、评论、搜索
               
             
           </h1>
@@ -267,8 +265,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2016-02-18T13:22:43+08:00" content="2016-02-18">
-              2016-02-18
+            <time itemprop="dateCreated" datetime="2016-02-24T09:32:21+08:00" content="2016-02-24">
+              2016-02-24
             </time>
           </span>
 
@@ -297,8 +295,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/hexo01.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="hexo01.html" itemprop="commentsCount"></span>
+                <a href="/hexo02.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="hexo02.html" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -319,59 +317,36 @@
       
 
       
-        <p><img src="/uploads/hexo01.png" alt="hexo"></p>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>有写作习惯的朋友大都知道WordPress，当然最早都是用新浪博客、QQ空间之类，如今还有各种微博、微信；之前我都是用WordPress，WordPress很强大，强大到现在让我失去了写作的乐趣，更多的是去折腾：频繁地更换主题、插件，甚至某些好的收费主题让你愿意花钱去购买，少则几十，多则几百，而最终用腻了又会再花钱去买其他的主题，最后网站内容没什么更新，钱和时间倒是花了不少。后来也看到用ghost来搭建博客的，但ghost挺复杂的，您最好有一台自己的服务器或者VPS，成本好高，当然免费的也有（Nitros.io、DaoCloud、Openshift都很不错）但终归不太方便，于是无意间又看到了Hexo……<br><a id="more"></a></p>
-<h2 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h2><blockquote>
-<p>A fast, simple &amp; powerful blog framework</p>
+        <p>上篇已经记录了如何安装HEXO，HEXO默认主题也不错，但是不太美观，而且默认是没有评论系统的，那么本篇就开始记录如何安装主题、插件、评论及搜索系统。<br><a id="more"></a></p>
+<h2 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h2><p>主题可以在这两个网站查找</p>
+<blockquote>
+<p><a href="https://hexo.io/themes/" target="_blank" rel="external">hexo themes</a><br><a href="https://github.com/hexojs/hexo/wiki/themes" target="_blank" rel="external">github hexo themes</a></p>
 </blockquote>
-<p><a href="http://hexo.io/" target="_blank" rel="external">Hexo</a> 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<br>网络上有很多安装教程，这里我只是作为自己的建站日志，基于Windows系统平台下安装。</p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h3><ol>
-<li>安装GIT(Git是一个分布式的版本控制系统)<br><a href="https://git-for-windows.github.io/" target="_blank" rel="external">git for windows</a><br>下载好安装，安装过程默认即可。</li>
-<li>安装Node.js(Node.js是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用)<br><a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>我下载的是LTS版本。安装后方便的话重启电脑一下。</li>
-<li><p>安装Hexo<br>3.1 先执行一下命令，以免出现错误提示–&gt; <code>ERROR Deployer not found : github</code></p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>3.2 然后执行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h3 id="初始化及配置"><a href="#初始化及配置" class="headerlink" title="初始化及配置"></a>初始化及配置</h3><ol>
-<li><p>注册及配置Git<br>注册Github账户：<a href="https://github.com/" target="_blank" rel="external">Github官网</a>,记住用户名、邮箱及密码<br>1.1 对于首次安装git的机器，首先进行用户账户信息的配置<br>前面我们已经安装了GIT，安装完成后，桌面上会出现git bash的图标，双击它或者右击电脑任一空白处即可进入git bash控制台。输入命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"你的github用户名"</span></span><br><span class="line">git config --global user.email <span class="string">"你的github邮箱地址"</span></span><br></pre></td></tr></table></figure>
-<p>1.2 本地创建ssh key</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"你的github邮箱地址"</span></span><br></pre></td></tr></table></figure>
-<p>之后会要求确认路径和输入密码，一路回车就行。成功的话会在默认路径下生成.ssh文件夹，打开默认进去，用记事本打开id_rsa.pub，复制里面的key。然后打开github网站，进入Account Settings，左边选择SSH Keys，Add SSH Key,title随便填，粘贴key即可完成git配置。<br>1.3 验证是否成功，在git bash下输入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-<p>第一次的会提示是否continue，输入yes就会看到：You’ve successfully authenticated, but GitHub does not provide shell access 。这就表示已成功连上github。</p>
-</li>
-<li><p>创建Hexo文件夹及配置<br>在自己想要的位置创建文件夹，如D:\hexo，名字和地方可以自由选择，最好不要放在中文路径下，之后进入文件夹，即D:\hexo内，点击鼠标右键，选择Git Bash，执行以下命令，Hexo会自动在该文件夹下下载搭建网站所需的所有文件。<br>2.1 创建hexo网站</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-<p>2.2 安装依赖包</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
-<p>2.3 静态化及本地测试</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>然后就可以用浏览器访问<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 预览网站效果</p>
-</li>
-<li>创建github仓库<br>登陆github网站，新建一个Repository，名字的格式必须为youname.github.io，例如我的为ormori.github.io</li>
-<li><p>部署本地网站到github<br>4.1 编辑D：\hexo下的_config.yml文件，建议使用Notepad++软件。<br>在_config.yml最下方，添加如下配置(命令中的第一个ormori为Github的用户名,第二个ormori为之前New的Repository的名字,记得改成自己的。另外记得一点，<strong>hexo的配置文件中任何’:’后面都是带一个空格的)</strong>，另外<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a> 可改为git@github.com:(有介绍说https模式可能会失败)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: https://github.com/ormori/ormori.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p>4.2 配置好_config.yml并保存后，执行以下命令部署到Github上</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<p>执行上面的第二个命令时，会要你输入github的用户名和密码，这样既完成hexo的搭建并发布到Github上了，在浏览器访问ormori.github.io就能看到自己的博客了。第一次可能访问不了，您可以在几分钟后进行访问，一般不超过10分钟。</p>
-</li>
-</ol>
-<h2 id="发布第一篇文章"><a href="#发布第一篇文章" class="headerlink" title="发布第一篇文章"></a>发布第一篇文章</h2><p>发表一篇文章</p>
-<ol>
-<li><p>在Git Bash执行命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">"my new post"</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在D:\hexo\source_post中打开my-new-post.md编辑内容<br>写完文章后，你可以使用1.$ hexo g生成静态文件。2.$ hexo s在本地预览效果。3.hexo d同步到github，然后使用<a href="http://ormori.github.io进行访问。" target="_blank" rel="external">http://ormori.github.io进行访问。</a></p>
-</li>
-</ol>
-<h2 id="绑定自己的域名"><a href="#绑定自己的域名" class="headerlink" title="绑定自己的域名"></a>绑定自己的域名</h2><ol>
-<li>设置CNAME<br>在Github的网站目录下创建CNAME文件，填写自己的域名如ormori.com，保存结束，也可以在本地创建CNANE文件后部署到github。</li>
-<li>登录DNSPod或者域名服务商网站，先添加域名，然后添加记录，设置如下<br><img src="/uploads/hexo02.jpg" alt="hexo"></li>
-</ol>
-<p>至此完成Hexo的安装与配置<br>本文参考：<br><a href="https://segmentfault.com/a/1190000003101692" target="_blank" rel="external">使用GitHub和Hexo搭建免费静态Blog</a><br><a href="http://opiece.me/2015/04/09/hexo-guide/" target="_blank" rel="external">使用Hexo搭建个人博客(基于hexo3.0)</a></p>
+<p>安装方法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> &lt;repository&gt; themes/&lt;theme-name&gt;</span><br></pre></td></tr></table></figure></p>
+<p>本站使用的是NexT主题，有详细的主题教程。</p>
+<blockquote>
+<p><a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT主题安装</a><br><a href="http://notes.iissnan.com/" target="_blank" rel="external">NexT主题预览</a></p>
+</blockquote>
+<p>有兴趣的完全可以参考上面的链接一步步操作就可以实现跟本站一样的效果了。</p>
+<blockquote>
+<p>安装主题方法其实很简单，只要下载想要的主题放到站点目录的<strong>themes</strong>目录下，然后在站点配置文件_config.yml中找到 theme 字段，并将其值更改为对应的主题文件夹名即可。</p>
+</blockquote>
+<p>这里再介绍一个不错的主题,也有详细的安装教程：</p>
+<blockquote>
+<p><a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" rel="external">MOxFIVE</a><br><a href="http://moxfive.xyz/" target="_blank" rel="external">MOxFIVE主题预览</a></p>
+</blockquote>
+<h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p>插件可以在这两个网站查找</p>
+<blockquote>
+<p><a href="https://hexo.io/plugins/" target="_blank" rel="external">hexo plugins</a><br><a href="https://github.com/hexojs/hexo/wiki/Plugins" target="_blank" rel="external">github hexo plugins</a></p>
+</blockquote>
+<p>安装方法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install &lt;plugin-name&gt; --save</span><br></pre></td></tr></table></figure></p>
+<p>启用插件：在_config.yml文件添加：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">plugins:</span><br><span class="line">- &lt;plugin-name&gt;  <span class="comment">#插件名</span></span><br></pre></td></tr></table></figure></p>
+<p>升级插件：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm update</span><br></pre></td></tr></table></figure></p>
+<p>卸载插件：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall &lt;plugin-name&gt;</span><br></pre></td></tr></table></figure></p>
+<p>这里建议安装两个插件：<br>RSS和Sitemap：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-feed --save</span><br><span class="line">$ npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure></p>
+<p>然后在站点配置文件_config.yml中添加：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Plugins:</span><br><span class="line">- hexo-generator-sitemap</span><br><span class="line">- hexo-generator-feed</span><br><span class="line"><span class="comment">#sitemap</span></span><br><span class="line">sitemap:</span><br><span class="line">  path: sitemap.xml</span><br><span class="line"><span class="comment">#rss</span></span><br><span class="line">rss: /atom.xml</span><br></pre></td></tr></table></figure></p>
+<h2 id="安装评论系统"><a href="#安装评论系统" class="headerlink" title="安装评论系统"></a>安装评论系统</h2><p>现在一般主题都已内置了评论配置文件，只需在主题的配置文件中添加相应评论系统的id即可。<br>这里可以参考下方教程，我就不再多说：<br><a href="http://moxfive.xyz/2016/01/02/hexo-comments/" target="_blank" rel="external">为 Hexo 主题添加评论模块 — Disqus, 多说, 友言</a></p>
+<h2 id="添加Swiftype-搜索组件"><a href="#添加Swiftype-搜索组件" class="headerlink" title="添加Swiftype 搜索组件"></a>添加Swiftype 搜索组件</h2><p>请参考：<br><a href="http://blog.parryqiu.com/2016/02/03/how_to_add_swiftype_search_to_hexo/" target="_blank" rel="external">如何在 Hexo 博客引擎中添加 Swiftype 搜索组件</a><br><a href="http://www.jerryfu.net/post/search-engine-for-hexo-with-swiftype-v2.html" target="_blank" rel="external">利用swiftype为hexo添加站内搜索v2.0</a><br><a href="http://www.jianshu.com/p/85cd68408f81" target="_blank" rel="external">为hexo添加站内搜索功能</a></p>
 
       
     </div>
@@ -391,16 +366,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/xuzhang.html" rel="next" title="序 章">
-                <i class="fa fa-chevron-left"></i> 序 章
+              <a href="/hexo01.html" rel="next" title="Hexo建站日志NO.1：安装及配置">
+                <i class="fa fa-chevron-left"></i> Hexo建站日志NO.1：安装及配置
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/hexo02.html" rel="prev" title="Hexo建站日志NO.2：主题、插件、评论、搜索">
-                Hexo建站日志NO.2：主题、插件、评论、搜索 <i class="fa fa-chevron-right"></i>
+              <a href="/hexo03.html" rel="prev" title="Hexo目录结构与配置说明及常用设置">
+                Hexo目录结构与配置说明及常用设置 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -416,10 +391,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="hexo01.html"
-     data-title="Hexo建站日志NO.1：安装及配置"
+        <div class="ds-share flat" data-thread-key="hexo02.html"
+     data-title="Hexo建站日志NO.2：主题、插件、评论、搜索"
      data-content=""
-     data-url="http://ormori.com/hexo01.html">
+     data-url="http://ormori.com/hexo02.html">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -449,8 +424,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="hexo01.html"
-           data-title="Hexo建站日志NO.1：安装及配置" data-url="http://ormori.com/hexo01.html">
+      <div class="ds-thread" data-thread-key="hexo02.html"
+           data-title="Hexo建站日志NO.2：主题、插件、评论、搜索" data-url="http://ormori.com/hexo02.html">
       </div>
     
   </div>
@@ -585,7 +560,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo简介"><span class="nav-number">2.</span> <span class="nav-text">Hexo简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">3.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前期准备"><span class="nav-number">3.1.</span> <span class="nav-text">前期准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化及配置"><span class="nav-number">3.2.</span> <span class="nav-text">初始化及配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发布第一篇文章"><span class="nav-number">4.</span> <span class="nav-text">发布第一篇文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#绑定自己的域名"><span class="nav-number">5.</span> <span class="nav-text">绑定自己的域名</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装主题"><span class="nav-number">1.</span> <span class="nav-text">安装主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装插件"><span class="nav-number">2.</span> <span class="nav-text">安装插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装评论系统"><span class="nav-number">3.</span> <span class="nav-text">安装评论系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加Swiftype-搜索组件"><span class="nav-number">4.</span> <span class="nav-text">添加Swiftype 搜索组件</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
