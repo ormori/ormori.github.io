@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion">
+<html class="theme-next pisces use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -65,7 +65,7 @@
 <meta property="og:url" content="http://ormori.com/hexo05.html">
 <meta property="og:site_name" content="Ormori 森原摄">
 <meta property="og:description" content="本篇要记录的是MarkDown的语法，因为Hexo 使用 Markdown解析文章，所以我们必须简单地掌握下：Markdown是一种极简的『标记语言』，将文本转为HTML，学会后可轻松写出高大上的文档，再也不需要各种编辑器去调文章格式。另外，网上有各平台下的Markdown工具可用，也有在线的，需要可以去了解。">
-<meta property="og:updated_time" content="2016-02-25T01:23:48.727Z">
+<meta property="og:updated_time" content="2016-02-25T02:30:18.616Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MarkDown语法总结">
 <meta name="twitter:description" content="本篇要记录的是MarkDown的语法，因为Hexo 使用 Markdown解析文章，所以我们必须简单地掌握下：Markdown是一种极简的『标记语言』，将文本转为HTML，学会后可轻松写出高大上的文档，再也不需要各种编辑器去调文章格式。另外，网上有各平台下的Markdown工具可用，也有在线的，需要可以去了解。">
@@ -75,8 +75,8 @@
 <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
-    sidebar: "post",
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -112,8 +112,10 @@
 
   
   
+    
+  
 
-  <div class="container one-collumn  page-post-detail ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -197,6 +199,15 @@
 
       
       
+      
+        <li class="menu-item menu-item-search">
+          <a href="#" class="st-search-show-outputs">
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            檢索
+          </a>
+        </li>
       
     </ul>
   
@@ -323,7 +334,7 @@
 <h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">生成h1--h6,在文字前面加上 <span class="number">1</span>--<span class="number">6</span>个<span class="comment"># 来实现</span></span><br><span class="line">文字加粗是通过 文字左右各两个符号</span><br></pre></td></tr></table></figure>
 <h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在第一行加上 “&gt;”和一个空格，表示代码引用，还可以嵌套</span><br></pre></td></tr></table></figure>
 <h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">这个是markdown文件的主要表示方式，主题要点化</span><br><span class="line"></span><br><span class="line">使用*,+,-加上一个空格来表示</span><br><span class="line">可以支持嵌套</span><br><span class="line">有序列表用 数字+英文点+空格来表示</span><br><span class="line">列表内容很长，不需要手工输入换行符，css控制段落的宽度，会自动的缩放的</span><br></pre></td></tr></table></figure>
-<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">直接写 [锚文本](url <span class="string">"可选的title"</span>)</span><br><span class="line">引用 先定义 [ref_name]:url，然后在需要写入url的地方， 这样使用[锚文本][ref_name]，通常的ref_name一般用数字表示，这样显得专业</span><br><span class="line">简写url：用尖括号包裹url </span><br><span class="line">这样生成的url锚文本就是url本身</span><br></pre></td></tr></table></figure>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">直接写 [锚文本](url <span class="string">"可选的title"</span>)</span><br><span class="line">引用 先定义 [ref_name]:url，然后在需要写入url的地方， 这样使用[锚文本][ref_name]，</span><br><span class="line">通常的ref_name一般用数字表示，这样显得专业</span><br><span class="line">简写url：用尖括号包裹url </span><br><span class="line">这样生成的url锚文本就是url本身</span><br></pre></td></tr></table></figure>
 <h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">一行表示: ![alt_text](url <span class="string">"可选的title"</span>)</span><br><span class="line">引用表示法: ![alt_text][id],预先定义 [id]:url <span class="string">"可选title"</span></span><br><span class="line">直接使用&lt;img&gt;标签，这样可以指定图片的大小尺寸</span><br></pre></td></tr></table></figure>
 <h3 id="特殊符号"><a href="#特殊符号" class="headerlink" title="特殊符号"></a>特殊符号</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">用\来转义，表示文本中的markdown符号</span><br><span class="line">可以在文本种直接使用html标签，但是要注意在使用的时候，前后加上空行</span><br><span class="line">文本前后各加一个符号，表示斜体</span><br></pre></td></tr></table></figure>
 <h3 id="MarkDown里-table-的语法"><a href="#MarkDown里-table-的语法" class="headerlink" title="MarkDown里 table 的语法"></a>MarkDown里 table 的语法</h3><p>MD写法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| 链接 | 结果 | 原因 |</span><br><span class="line">|:-----|:---:|----------:|</span><br><span class="line">|文本内容| **`是`** |同协议同域名同端口|</span><br><span class="line">|文本内容| **`是`** |同协议同域名同端口|</span><br><span class="line">|文本内容| **`是`** |同协议同域名同端口|</span><br></pre></td></tr></table></figure></p>
@@ -578,7 +589,7 @@
 <div class="theme-info">
   主題 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Pisces
   </a>
 </div>
 
@@ -621,6 +632,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
 
   
   
