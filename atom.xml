@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ormori.com/"/>
-  <updated>2016-02-25T02:30:18.616Z</updated>
+  <updated>2016-03-08T08:29:23.914Z</updated>
   <id>http://ormori.com/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo日常维护及更换电脑后如何迁移同步</title>
+    <link href="http://ormori.com/hexo06.html"/>
+    <id>http://ormori.com/hexo06.html</id>
+    <published>2016-03-01T08:15:47.000Z</published>
+    <updated>2016-03-08T08:29:23.914Z</updated>
+    
+    <content type="html">&lt;p&gt;其实hexo建站完毕后日常需要做的事情很简单，只需要：新建文章(new)，然后找到生成的.md编辑并保存，再生成博客(generate)并部署(deploy)，就可以完成新文章的发布了。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;title: 使用Hexo搭建个人博客  //文章标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;layout: post                 //文章样式  可有可无，默认post&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;date: 2016-01-01 00:00:00    //发布时间&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;comments: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;               //是否打开评论功能 可有可无，默认打开&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;categories: B&lt;span class=&quot;built_in&quot;&gt;log&lt;/span&gt;             //文章分类&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tags: [Hexo]                 //文章标签&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;keywords: Hexo, B&lt;span class=&quot;built_in&quot;&gt;log&lt;/span&gt;         //关键词    可有可无&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;description: 生命在于折腾    //文章描述  可有可无&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;假如换了台电脑，比如家里跟公司要一起用，没关系，比如一开始在公司部署好，那么我个人是直接打包公司电脑的D:/HEXO文件夹，然后在家里电脑安装好环境（参考：&lt;a href=&quot;http://ormori.com/hexo01.html&quot;&gt;Hexo建站日志NO.1&lt;/a&gt;,完成到初始化及配置的第二步即可），将家里电脑中的hexo文件夹替换成公司已打包备份的就可以了。如果有新文章更新只需再复制新文章到另一台电脑就可以了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;本来想进行双同步的（github和gitcafe）不过发现gitcafe要搬到coding的，此事就暂缓吧…&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;其实hexo建站完毕后日常需要做的事情很简单，只需要：新建文章(new)，然后找到生成的.md编辑并保存，再生成博客(generate)并部署(deploy)，就可以完成新文章的发布了。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="日志" scheme="http://ormori.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="Hexo" scheme="http://ormori.com/tags/Hexo/"/>
+    
+      <category term="建站" scheme="http://ormori.com/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
   
   <entry>
     <title>MarkDown语法总结</title>
