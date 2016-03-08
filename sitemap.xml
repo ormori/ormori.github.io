@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ormori.com/hexo04.html</loc>
+    
+    <lastmod>2016-03-08T08:57:45.068Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ormori.com/hexo06.html</loc>
     
     <lastmod>2016-03-08T08:56:07.546Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://ormori.com/hexo05.html</loc>
     
     <lastmod>2016-03-08T08:55:56.053Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ormori.com/hexo04.html</loc>
-    
-    <lastmod>2016-03-08T08:55:45.916Z</lastmod>
     
   </url>
   
