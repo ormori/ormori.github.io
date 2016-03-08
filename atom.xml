@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ormori.com/"/>
-  <updated>2016-03-08T08:29:23.914Z</updated>
+  <updated>2016-03-08T08:56:07.546Z</updated>
   <id>http://ormori.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo日常维护及更换电脑后如何迁移同步</title>
+    <title>Hexo建站日志NO.6：Hexo日常维护及更换电脑后如何迁移同步</title>
     <link href="http://ormori.com/hexo06.html"/>
     <id>http://ormori.com/hexo06.html</id>
     <published>2016-03-01T08:15:47.000Z</published>
-    <updated>2016-03-08T08:29:23.914Z</updated>
+    <updated>2016-03-08T08:56:07.546Z</updated>
     
     <content type="html">&lt;p&gt;其实hexo建站完毕后日常需要做的事情很简单，只需要：新建文章(new)，然后找到生成的.md编辑并保存，再生成博客(generate)并部署(deploy)，就可以完成新文章的发布了。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;title: 使用Hexo搭建个人博客  //文章标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;layout: post                 //文章样式  可有可无，默认post&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;date: 2016-01-01 00:00:00    //发布时间&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;comments: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;               //是否打开评论功能 可有可无，默认打开&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;categories: B&lt;span class=&quot;built_in&quot;&gt;log&lt;/span&gt;             //文章分类&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tags: [Hexo]                 //文章标签&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;keywords: Hexo, B&lt;span class=&quot;built_in&quot;&gt;log&lt;/span&gt;         //关键词    可有可无&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;description: 生命在于折腾    //文章描述  可有可无&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -45,11 +45,11 @@
   </entry>
   
   <entry>
-    <title>MarkDown语法总结</title>
+    <title>Hexo建站日志NO.5：MarkDown语法总结</title>
     <link href="http://ormori.com/hexo05.html"/>
     <id>http://ormori.com/hexo05.html</id>
     <published>2016-02-24T09:01:37.000Z</published>
-    <updated>2016-02-25T02:30:18.616Z</updated>
+    <updated>2016-03-08T08:55:56.053Z</updated>
     
     <content type="html">&lt;p&gt;本篇要记录的是MarkDown的语法，因为Hexo 使用 Markdown解析文章，所以我们必须简单地掌握下：&lt;br&gt;Markdown是一种极简的『标记语言』，将文本转为HTML，学会后可轻松写出高大上的文档，再也不需要各种编辑器去调文章格式。另外，网上有各平台下的Markdown工具可用，也有在线的，需要可以去了解。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;基本符号&quot;&gt;&lt;a href=&quot;#基本符号&quot; class=&quot;headerlink&quot; title=&quot;基本符号&quot;&gt;&lt;/a&gt;基本符号&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;*,-,+ 3个符号效果都一样，这3个符号被称为 Markdown符号&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;空白行表示另起一个段落&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;`是表示inline代码，tab是用来标记代码段，分别对应html的code，pre标签&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -85,11 +85,11 @@
   </entry>
   
   <entry>
-    <title>Hexo&amp;Git常用命令及站长工具</title>
+    <title>Hexo建站日志NO.5：Hexo&amp;Git常用命令及站长工具</title>
     <link href="http://ormori.com/hexo04.html"/>
     <id>http://ormori.com/hexo04.html</id>
     <published>2016-02-24T05:39:36.000Z</published>
-    <updated>2016-02-24T08:54:46.380Z</updated>
+    <updated>2016-03-08T08:55:45.916Z</updated>
     
     <content type="html">&lt;p&gt;好了，接下来可以专心开始写文章丰富内容了。先整理了下日常常用的hexo命令及一些站长工具网站：&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;Hexo常用命令整理&quot;&gt;&lt;a href=&quot;#Hexo常用命令整理&quot; class=&quot;headerlink&quot; title=&quot;Hexo常用命令整理&quot;&gt;&lt;/a&gt;Hexo常用命令整理&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$npm&lt;/span&gt; install hexo -g &lt;span class=&quot;comment&quot;&gt;#安装  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$npm&lt;/span&gt; update hexo -g &lt;span class=&quot;comment&quot;&gt;#升级  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; init &lt;span class=&quot;comment&quot;&gt;#初始化&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$npm&lt;/span&gt; ls hexo-deployer-git &lt;span class=&quot;comment&quot;&gt;#查看当前版本&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; s &lt;span class=&quot;comment&quot;&gt;#hexo server 启动服务预览&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#启动本地服务器，默认地址：http://localhost:4000/  #Ctrl+C 结束&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; n &lt;span class=&quot;string&quot;&gt;&quot;hello&quot;&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;#新建文章&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; g &lt;span class=&quot;comment&quot;&gt;#hexo generate生成静态网页&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; d &lt;span class=&quot;comment&quot;&gt;#hexo deploy部署&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; c &lt;span class=&quot;comment&quot;&gt;#hexo clean 清除缓存 网页正常的话可以忽略此条命令&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; publish [layout] &amp;lt;title&amp;gt;  &lt;span class=&quot;comment&quot;&gt;#发布草稿&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$hexo&lt;/span&gt; d -g 部署静态文件&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#更新主题&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$cd&lt;/span&gt; themes/next&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$git&lt;/span&gt; pull&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -168,11 +168,11 @@
   </entry>
   
   <entry>
-    <title>Hexo目录结构与配置说明及常用设置</title>
+    <title>Hexo建站日志NO.3：Hexo目录结构与配置说明及常用设置</title>
     <link href="http://ormori.com/hexo03.html"/>
     <id>http://ormori.com/hexo03.html</id>
     <published>2016-02-24T03:39:50.000Z</published>
-    <updated>2016-02-24T05:37:31.015Z</updated>
+    <updated>2016-03-08T08:55:29.652Z</updated>
     
     <content type="html">&lt;p&gt;完成上一篇的主题插件及评论搜索功能后，一个完整的HEXO网站算是正式搭建完成了，接下来你可以开始完善网站内容了。不错为了更深入了解HEXO及对HEXO作简单优化，这里有必要对HEXO的目录进行简单的了解以便之后的优化。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;网站目录&quot;&gt;&lt;a href=&quot;#网站目录&quot; class=&quot;headerlink&quot; title=&quot;网站目录&quot;&gt;&lt;/a&gt;网站目录&lt;/h2&gt;&lt;p&gt;hexo在安装后产生下图目录：&lt;br&gt;&lt;img src=&quot;http://7fvfta.com1.z0.glb.clouddn.com/hexo00.png&quot; alt=&quot;hexo00&quot;&gt;&lt;/p&gt;
