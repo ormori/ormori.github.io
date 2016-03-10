@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ormori.com/"/>
-  <updated>2016-03-10T07:09:22.466Z</updated>
+  <updated>2016-03-10T09:01:16.749Z</updated>
   <id>http://ormori.com/</id>
   
   <author>
@@ -16,11 +16,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo建站日志NO.8：Hexo主题优化及打赏功能</title>
+    <link href="http://ormori.com/hexo08.html"/>
+    <id>http://ormori.com/hexo08.html</id>
+    <published>2016-03-10T07:33:25.000Z</published>
+    <updated>2016-03-10T09:01:16.749Z</updated>
+    
+    <content type="html">&lt;p&gt;在上文同时部署到github和coding后，突然网站访问变得奇慢，经过寻找原因发现问题出在所使用的NexT主题上。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;屏蔽google字体&quot;&gt;&lt;a href=&quot;#屏蔽google字体&quot; class=&quot;headerlink&quot; title=&quot;屏蔽google字体&quot;&gt;&lt;/a&gt;屏蔽google字体&lt;/h2&gt;&lt;p&gt;原因出在网站加载google字体所致，由于天朝已将google至于墙外，所以只得屏蔽掉google字体方可解决。&lt;br&gt;找到Next主题目录下的\themes\next\layout_partials\head.swig文件，找到google字样所处的段落删除即可。&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;% &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; theme.use_font_lato %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;link href=&lt;span class=&quot;string&quot;&gt;&quot;//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&amp;amp;subset=latin,latin-ext&quot;&lt;/span&gt; rel=&lt;span class=&quot;string&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/css&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;% endif %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&quot;添加文章打赏功能&quot;&gt;&lt;a href=&quot;#添加文章打赏功能&quot; class=&quot;headerlink&quot; title=&quot;添加文章打赏功能&quot;&gt;&lt;/a&gt;添加文章打赏功能&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;请参考&lt;a href=&quot;http://www.tuicool.com/articles/NF3Y3e&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo 静态博客上线文章打赏功能，支持支付宝、微信支付捐赠&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;效果见下方&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在上文同时部署到github和coding后，突然网站访问变得奇慢，经过寻找原因发现问题出在所使用的NexT主题上。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="日志" scheme="http://ormori.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="Hexo" scheme="http://ormori.com/tags/Hexo/"/>
+    
+      <category term="建站" scheme="http://ormori.com/tags/%E5%BB%BA%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo建站日志NO.7：同时托管到github和coding</title>
     <link href="http://ormori.com/hexo07.html"/>
     <id>http://ormori.com/hexo07.html</id>
     <published>2016-03-10T06:14:42.000Z</published>
-    <updated>2016-03-10T07:09:22.466Z</updated>
+    <updated>2016-03-10T07:14:01.826Z</updated>
     
     <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;最近感觉站点访问速度比较慢，于是开始考虑到国内的gitcafe，刚好gitcafe要迁移至coding，于是就开始打算将网站同时托管至github和coding，另外域名国内解析至coding，国外解析至github。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=&quot;headerlink&quot; title=&quot;准备&quot;&gt;&lt;/a&gt;准备&lt;/h2&gt;&lt;ol&gt;
@@ -33,14 +63,14 @@
 &lt;/blockquote&gt;
 &lt;p&gt;然后&lt;strong&gt;hexo d -g&lt;/strong&gt; 部署到coding上即可。&lt;/p&gt;
 &lt;h2 id=&quot;Coding自动部署&quot;&gt;&lt;a href=&quot;#Coding自动部署&quot; class=&quot;headerlink&quot; title=&quot;Coding自动部署&quot;&gt;&lt;/a&gt;Coding自动部署&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;h4 id=&quot;开启演示方式部署&quot;&gt;&lt;a href=&quot;#开启演示方式部署&quot; class=&quot;headerlink&quot; title=&quot;开启演示方式部署&quot;&gt;&lt;/a&gt;开启演示方式部署&lt;/h4&gt;当你把你的静态网站上传到Coding之后，就可以着手部署演示了，Coding的演示平台支持静态网页，所以其实非常简单。在开启演示模式之前，会提醒你没有检测到环境，你直接强制开启就可以了。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;开启演示方式部署&lt;/strong&gt;&lt;br&gt;当你把你的静态网站上传到Coding之后，就可以着手部署演示了，Coding的演示平台支持静态网页，所以其实非常简单。在开启演示模式之前，会提醒你没有检测到环境，你直接强制开启就可以了。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;部署版本不用填，默认是master&lt;br&gt;运行环境&lt;strong&gt;一定要&lt;/strong&gt;选择HTML&lt;br&gt;自动部署要勾上，为后面配置自动部署做准备&lt;br&gt;访问域名根据你自己喜爱填写，填好要点急后面的确认按钮&lt;br&gt;应用内存也根据自己喜好填写，填好要点急后面的确认按钮  &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;以上都配置好了，就可以按下一键部署的按钮了，部署成功后输入地址：ormori.coding.io就能访问&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;h4 id=&quot;配置自动部署&quot;&gt;&lt;a href=&quot;#配置自动部署&quot; class=&quot;headerlink&quot; title=&quot;配置自动部署&quot;&gt;&lt;/a&gt;配置自动部署&lt;/h4&gt;&lt;blockquote&gt;
+&lt;li&gt;&lt;strong&gt;配置自动部署&lt;/strong&gt;&lt;blockquote&gt;
 &lt;p&gt;找到项目的&lt;strong&gt;设置&lt;/strong&gt;里的WebHook,然后点击新建 Hook&lt;br&gt;第一个输入框中是填你的博客域名，然后在后面加上/_&lt;br&gt;第二个输入框是输入一个 token ，我们直接填写 { { TOKEN } } 就可以了,TOKEN两边的大括号见的空格记得去掉&lt;br&gt;回到演示里，在左边的栏目中找到环境变量,变量名填写为 WEBHOOK_TOKEN ，值为 { { TOKEN } } ，接着重新启动应用就 ok 了！&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;

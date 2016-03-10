@@ -30,6 +30,7 @@
   <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
 
 
+
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
@@ -60,7 +61,7 @@
 <meta property="og:site_name" content="Ormori 森原摄">
 <meta property="og:description" content="前言最近感觉站点访问速度比较慢，于是开始考虑到国内的gitcafe，刚好gitcafe要迁移至coding，于是就开始打算将网站同时托管至github和coding，另外域名国内解析至coding，国外解析至github。">
 <meta property="og:image" content="http://7fvfta.com1.z0.glb.clouddn.com/domain.jpg">
-<meta property="og:updated_time" content="2016-03-10T07:09:22.466Z">
+<meta property="og:updated_time" content="2016-03-10T07:14:01.826Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo建站日志NO.7：同时托管到github和coding">
 <meta name="twitter:description" content="前言最近感觉站点访问速度比较慢，于是开始考虑到国内的gitcafe，刚好gitcafe要迁移至coding，于是就开始打算将网站同时托管至github和coding，另外域名国内解析至coding，国外解析至github。">
@@ -334,14 +335,14 @@
 </blockquote>
 <p>然后<strong>hexo d -g</strong> 部署到coding上即可。</p>
 <h2 id="Coding自动部署"><a href="#Coding自动部署" class="headerlink" title="Coding自动部署"></a>Coding自动部署</h2><ul>
-<li><h4 id="开启演示方式部署"><a href="#开启演示方式部署" class="headerlink" title="开启演示方式部署"></a>开启演示方式部署</h4>当你把你的静态网站上传到Coding之后，就可以着手部署演示了，Coding的演示平台支持静态网页，所以其实非常简单。在开启演示模式之前，会提醒你没有检测到环境，你直接强制开启就可以了。</li>
+<li><strong>开启演示方式部署</strong><br>当你把你的静态网站上传到Coding之后，就可以着手部署演示了，Coding的演示平台支持静态网页，所以其实非常简单。在开启演示模式之前，会提醒你没有检测到环境，你直接强制开启就可以了。</li>
 </ul>
 <blockquote>
 <p>部署版本不用填，默认是master<br>运行环境<strong>一定要</strong>选择HTML<br>自动部署要勾上，为后面配置自动部署做准备<br>访问域名根据你自己喜爱填写，填好要点急后面的确认按钮<br>应用内存也根据自己喜好填写，填好要点急后面的确认按钮  </p>
 </blockquote>
 <p>以上都配置好了，就可以按下一键部署的按钮了，部署成功后输入地址：ormori.coding.io就能访问</p>
 <ul>
-<li><h4 id="配置自动部署"><a href="#配置自动部署" class="headerlink" title="配置自动部署"></a>配置自动部署</h4><blockquote>
+<li><strong>配置自动部署</strong><blockquote>
 <p>找到项目的<strong>设置</strong>里的WebHook,然后点击新建 Hook<br>第一个输入框中是填你的博客域名，然后在后面加上/_<br>第二个输入框是输入一个 token ，我们直接填写 { { TOKEN } } 就可以了,TOKEN两边的大括号见的空格记得去掉<br>回到演示里，在左边的栏目中找到环境变量,变量名填写为 WEBHOOK_TOKEN ，值为 { { TOKEN } } ，接着重新启动应用就 ok 了！</p>
 </blockquote>
 </li>
@@ -358,16 +359,48 @@
     </div>
 
     <footer class="post-footer">
+	<! -- 添加捐赠图标 -->
+    
+    
+
+    <div class ="post-donate">
+      <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="Donate 打赏"></a>
+        <span class="donate_txt">
+           &uarr;<br>
+           
+            赏杯咖啡，持续写作
+           
+        </span>
+        <br>
+      </div>
+
+      <div id="donate_guide" class="donate_bar center hidden">
+        
+          <a href="/alipay.png" title="支付宝打赏" class="fancybox" rel="article0"       style="float:left;margin-left:25%;margin-right:2px;">
+          <img src="/alipay.png" title="支付宝打赏" height="164px" width="164px">
+          </a>
+        
+
       
-        <div class="post-tags">
-          
-            <a href="/tags/Hexo/" rel="tag">#Hexo</a>
-          
-            <a href="/tags/建站/" rel="tag">#建站</a>
-          
-        </div>
+       <a href="/wechat.png" title="微信打赏" class="fancybox" rel="article0">
+         <img src="/wechat.png" title="微信打赏" height="164px" width="164px">
+       </a>
       
 
+      </div>
+
+      <script type="text/javascript">
+        document.getElementById('btn_donate').onclick = function(){
+          $('#donate_board').addClass('hidden');
+          $('#donate_guide').removeClass('hidden');
+        }
+      </script>
+    </div>
+
+    
+
+<! -- end 添加捐赠图标 -->
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
@@ -379,6 +412,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/hexo08.html" rel="prev" title="Hexo建站日志NO.8：Hexo主题优化及打赏功能">
+                Hexo建站日志NO.8：Hexo主题优化及打赏功能 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -472,7 +509,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -562,7 +599,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备"><span class="nav-number">2.</span> <span class="nav-text">准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Coding自动部署"><span class="nav-number">3.</span> <span class="nav-text">Coding自动部署</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#开启演示方式部署"><span class="nav-number">3.0.1.</span> <span class="nav-text">开启演示方式部署</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置自动部署"><span class="nav-number">3.0.2.</span> <span class="nav-text">配置自动部署</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#绑定域名"><span class="nav-number">4.</span> <span class="nav-text">绑定域名</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备"><span class="nav-number">2.</span> <span class="nav-text">准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Coding自动部署"><span class="nav-number">3.</span> <span class="nav-text">Coding自动部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#绑定域名"><span class="nav-number">4.</span> <span class="nav-text">绑定域名</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

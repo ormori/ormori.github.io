@@ -30,6 +30,7 @@
   <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
 
 
+
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
@@ -351,16 +352,48 @@
     </div>
 
     <footer class="post-footer">
+	<! -- 添加捐赠图标 -->
+    
+    
+
+    <div class ="post-donate">
+      <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="Donate 打赏"></a>
+        <span class="donate_txt">
+           &uarr;<br>
+           
+            赏杯咖啡，持续写作
+           
+        </span>
+        <br>
+      </div>
+
+      <div id="donate_guide" class="donate_bar center hidden">
+        
+          <a href="/alipay.png" title="支付宝打赏" class="fancybox" rel="article0"       style="float:left;margin-left:25%;margin-right:2px;">
+          <img src="/alipay.png" title="支付宝打赏" height="164px" width="164px">
+          </a>
+        
+
       
-        <div class="post-tags">
-          
-            <a href="/tags/Hexo/" rel="tag">#Hexo</a>
-          
-            <a href="/tags/建站/" rel="tag">#建站</a>
-          
-        </div>
+       <a href="/wechat.png" title="微信打赏" class="fancybox" rel="article0">
+         <img src="/wechat.png" title="微信打赏" height="164px" width="164px">
+       </a>
       
 
+      </div>
+
+      <script type="text/javascript">
+        document.getElementById('btn_donate').onclick = function(){
+          $('#donate_board').addClass('hidden');
+          $('#donate_guide').removeClass('hidden');
+        }
+      </script>
+    </div>
+
+    
+
+<! -- end 添加捐赠图标 -->
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
@@ -469,7 +502,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
